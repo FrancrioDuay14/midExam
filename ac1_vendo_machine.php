@@ -20,7 +20,7 @@
 
     <form method="post">
 
-        <!-------Products------->
+      
         <fieldset>
             <legend>Products:</legend>
 
@@ -35,7 +35,7 @@
 
         </fieldset>
                 
-        <!-------Options------->
+      
         <fieldset>
 
             <legend>Options:</legend>
@@ -51,7 +51,7 @@
                 ?>
             </select>
 
-             <!-------Options------->
+           
             <label for="setQuantity">Quantity</label>
             <input type="number" name="setQuantity" id="setQuantity" min="0" max="100" value="0">
             
@@ -70,7 +70,7 @@
                 $size = $_POST['sizeSelect'];
                 $process = $_POST['chkBeverage'];
 
-                /*-----Singular & Plural------*/
+               
                 if ($quantity == 1) {
                     $term = "piece";   
                 }
@@ -78,7 +78,7 @@
                     $term = "pieces";   
                 }
 
-                /*-----Add-ons------*/
+                
                 if ($size == 'Regular') {
                     $addon = 0;   
                 }
